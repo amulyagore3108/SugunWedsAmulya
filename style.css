@@ -12,7 +12,7 @@ html, body {
 
 body {
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("../images/Backdrop.png") center/cover no-repeat fixed;
+  background: url("Backdrop.png") center/cover no-repeat fixed;
   color: #22303f;
   overflow-x: hidden;
 }
