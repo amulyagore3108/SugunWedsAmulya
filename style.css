@@ -495,11 +495,12 @@ body {
 
 .contact {
   background: transparent;
+  text-align: center;
 }
 
 .contact-content {
   max-width: 700px;
-  text-align: center;
+  margin: auto;
 }
 
 .contact h2 {
@@ -516,17 +517,17 @@ body {
 
 .contact-cards {
   display: flex;
-  gap: 1.5rem;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
 }
 
 .contact-card {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.9);
   padding: 1.5rem 2rem;
   border-radius: 20px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.08);
-  min-width: 200px;
+  min-width: 180px;
 }
 
 .contact-card h3 {
@@ -537,4 +538,11 @@ body {
   color: #b44f70;
   text-decoration: none;
   font-weight: 600;
+}
+@media (max-width: 600px) {
+
+  .contact-cards {
+    flex-direction: column;
+  }
+
 }
