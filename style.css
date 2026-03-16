@@ -553,4 +553,46 @@ body {
   }
 
 }
+.section {
+  background-image: url("Backdrop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* CONTACT SECTION MOBILE FIX */
 
+@media (max-width: 600px) {
+
+  .contact-content {
+    padding: 0 10px;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-card {
+    width: 90%;
+    margin: auto;
+    padding: 1.2rem;
+  }
+
+  .contact-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-card a {
+    font-size: 0.95rem;
+  }
+
+}
