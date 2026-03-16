@@ -12,7 +12,11 @@ html, body {
 
 body {
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("Backdrop.png") center/cover no-repeat fixed;
+  background-image: url("Backdrop.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #22303f;
   overflow-x: hidden;
 }
@@ -464,6 +468,9 @@ body {
   .name {
     font-size: 3.5rem;
   }
+  .name {
+  white-space: nowrap;
+}
 
   .cards {
     grid-template-columns: 1fr;
@@ -539,10 +546,11 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-  .contact-cards {
-    flex-direction: column;
+  body {
+    background-attachment: scroll;
   }
 
 }
+
